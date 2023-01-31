@@ -120,3 +120,16 @@ main {
   height: auto;
   filter: grayscale(100%);
 }
+
+/* footer  */
+
+footer {
+  background-color: var(--bg-dark);
+}
+
+footer p {
+  font-size: var(--fs-small);
+  text-align: center;
+  color: var(--text-light);
+  padding: var(--spacing-medium) 0;
+}
