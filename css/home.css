@@ -84,14 +84,19 @@
 
 /*Stilizare cursuri section*/
 
+.courses .container.grid {
+  padding: var(--spacing-medium) var(--spacing-small);
+}
+
 .courses h2 {
-  text-align: center;
   margin: var(--spacing-large) 0;
+  text-align: center;
 }
 
 .courses .courses-container {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: var(--spacing-large);
 }
 
 .courses .course-wrapper {
@@ -100,50 +105,14 @@
   padding-right: var(--spacing-small);
 }
 
-.courses .course {
-  width: 100%;
-
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: var(--spacing-tiny);
-  margin-bottom: var(--spacing-medium);
+@media screen and (max-width: 992px) {
+  .courses .course-wrapper {
+    width: 50%;
+  }
 }
 
-.courses h3 {
-  color: var(--text-primary);
-  font-weight: 400;
-  margin-bottom: var(--spacing-medium);
-}
-
-.courses .badges {
-  margin-bottom: var(--spacing-medium);
-}
-
-.courses span,
-.courses i {
-  font-size: var(--fs-medium);
-  color: var(--text-dark);
-}
-
-.courses span {
-  padding: var(--spacing-tiny);
-}
-
-.courses i {
-  vertical-align: middle;
-}
-
-.course .place {
-  background-color: var(--text-secondary);
-  margin-left: var(--spacing-tiny);
-}
-
-.courses .content {
-  padding: var(--spacing-medium) var(--spacing-small);
-}
-
-.course .bar {
-  height: var(--spacing-tiny);
-  background-color: var(--button-color);
-  border-radius: 10px;
+@media screen and (max-width: 768px) {
+  .courses .course-wrapper {
+    width: 100%;
+  }
 }
