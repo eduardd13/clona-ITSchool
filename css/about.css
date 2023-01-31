@@ -133,3 +133,7 @@ footer p {
   color: var(--text-light);
   padding: var(--spacing-medium) 0;
 }
+
+nav .about-us:hover .submenu {
+  display: block;
+}

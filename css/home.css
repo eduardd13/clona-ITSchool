@@ -212,7 +212,7 @@
 
 @media screen and (max-width: 992px) {
   .who-we-are .image-wrapper {
-    width: 50%;
+    width: 50% !important;
   }
 }
 
@@ -257,6 +257,11 @@
   width: 100%;
   height: auto;
   filter: grayscale(100%);
+}
+
+.partners img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
 }
 
 /* footer */
