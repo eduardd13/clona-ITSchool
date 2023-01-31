@@ -212,7 +212,7 @@
 
 @media screen and (max-width: 992px) {
   .who-we-are .image-wrapper {
-    width: 50% !important;
+    width: 50%;
   }
 }
 
@@ -246,6 +246,13 @@
   }
 }
 
+@media (max-width: 576px) {
+  .partners .image-wrapper {
+    margin-right: var(--spacing-medium) !important;
+    margin-left: var(--spacing-medium) !important;
+  }
+}
+
 .partners .image-wrapper {
   width: 100px;
   margin-right: var(--spacing-xl);
@@ -257,11 +264,6 @@
   width: 100%;
   height: auto;
   filter: grayscale(100%);
-}
-
-.partners img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%);
 }
 
 /* footer */
