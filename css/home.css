@@ -1,0 +1,149 @@
+/*TO REMOVE when finished*/
+:root {
+  --ceva: red;
+}
+/*Remove till here*/
+
+.welcome {
+  background-color: var(--bg-primary);
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.welcome h1,
+.welcome p {
+  color: var(--text-light);
+}
+
+.welcome p {
+  font-size: var(--fs-large);
+  margin-bottom: var(--spacing-medium);
+}
+
+.welcome p:last-of-type {
+  margin-bottom: var(--spacing-xl);
+}
+
+.welcome img {
+  height: 24px;
+  margin-left: var(--spacing-medium);
+  position: relative;
+  top: var(--spacing-tiny);
+}
+
+.welcome p span {
+  color: var(--text-secondary);
+}
+
+.welcome a {
+  color: var(--text-light);
+  background-color: var(--button-color);
+
+  font-size: var(--fs-medium);
+  text-transform: uppercase;
+  text-align: center;
+  padding: var(--spacing-medium);
+  border: 2px solid var(--button-color);
+  border-radius: 5px;
+  width: 260px;
+}
+
+.welcome a:hover {
+  background-color: transparent;
+}
+
+.welcome .container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .welcome h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .welcome img {
+    display: block;
+    margin-top: var(--spacing-medium);
+    margin-left: var(--spacing-small);
+  }
+
+  .welcome a {
+    display: none;
+  }
+}
+
+/*Stilizare cursuri section*/
+
+.courses h2 {
+  text-align: center;
+  margin: var(--spacing-large) 0;
+}
+
+.courses .courses-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.courses .course-wrapper {
+  width: calc(100% / 3);
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+}
+
+.courses .course {
+  width: 100%;
+
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses h3 {
+  color: var(--text-primary);
+  font-weight: 400;
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses .badges {
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses span,
+.courses i {
+  font-size: var(--fs-medium);
+  color: var(--text-dark);
+}
+
+.courses span {
+  padding: var(--spacing-tiny);
+}
+
+.courses i {
+  vertical-align: middle;
+}
+
+.course .place {
+  background-color: var(--text-secondary);
+  margin-left: var(--spacing-tiny);
+}
+
+.courses .content {
+  padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.course .bar {
+  height: var(--spacing-tiny);
+  background-color: var(--button-color);
+  border-radius: 10px;
+}
