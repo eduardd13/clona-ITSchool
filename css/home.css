@@ -266,6 +266,11 @@
   filter: grayscale(100%);
 }
 
+.partners img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
 /* footer */
 
 footer {
