@@ -186,10 +186,6 @@ footer p {
   }
 }
 
-nav input[type="checkbox"] {
-  display: none;
-}
-
 nav .about-us:hover .submenu {
   display: block;
 }
